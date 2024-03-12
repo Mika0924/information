@@ -1,11 +1,10 @@
-import java.util.Scanner;
 
 class CheckingErrors extends Exception  {
     static String validateGender(String genderStr) throws CheckingErrors {
         if (genderStr.matches("[fm]")) {
             return genderStr;
         }
-        throw new CheckingErrors("Неверный формат пола");
+        throw new CheckingErrors("Введены некоретные данные");
 
     }
     static String validateBirthDate(String birthDate) throws CheckingErrors {
