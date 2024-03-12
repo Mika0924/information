@@ -10,12 +10,8 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException, ParseException {
+    public static void main(String[] args) throws Exception {
 
-        try {
-            User u = new User();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
+        User u = new User();
     }
 }
